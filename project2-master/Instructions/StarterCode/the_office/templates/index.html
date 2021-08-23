@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>The Office Group Project</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <style>
+        body {
+        background-color: white;
+      }
+    </style>
+    <style>
+        img {
+
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+  }
+
+    </style>
+
+<style>
+        body {
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+</style>
+
+</head>
+
+<body>
+
+    <img style= "text-align: center" src='https://imgix.bustle.com/uploads/image/2018/12/17/47d51f04-f5e6-49ce-b2bc-240d77a142e0-screen-shot-2018-12-17-at-30047-pm.png' , height=auto width="100%" />
+
+
+          <style>
+          .row-md-12{
+              background-color: white;
+          }
+        </style>
+
+  <div class="container">
+    <div class="row">
+      <div class="row-md-12 jumbotron text-center">
+        <button style= "background-color: white; font-size: 200%;" onclick="
+             document.getElementById('office').innerHTML = nextWord();
+           ">That's What He/She Said!</button>
+        <script type="text/javascript">
+            var nextWord = (function() {
+                var wordArray = ['"Would I rather be feared or loved? Easy. Both. I want people to be afraid of how much they love me."', 
+                                '"If I had a gun with two bullets and I was in a room with Hitler, Bin Laden, and Toby, I would shoot Toby twice."',
+                                '"You do not know me, you have just seen my penis."',
+                                '"You know what they say. Fool me once, strike one, but fool me twice...strike three."',
+                                '"Dwight, your an ignorant slut!"',
+                                '"You have no idea how high I can fly."',
+                                '"Bears. Beets. Battlestar Galatica"',
+                                '"Did I stutter?"',
+                                '"Sometimes I’ll start a sentence and I don’t even know where it’s going. I just hope I find it along the way."',
+                                '"Today, smoking is going to save lives."',
+								'“I am fast. To give you a reference point I am somewhere between a snake and a mongoose… And a panther.”',
+								'“As a farmer I know that when an animal is sick sometimes the right thing to do is put it out of its misery. With the electricity we are using to keep Meredith alive, we could power a small fan for two days. You tell me what’s unethical.”',
+								'“I signed up for Second Life about a year ago. Back then, my life was so great that I literally wanted a second one. Absolutely everything was the same…except I could fly.”',
+								'“In the wild, there is no healthcare. Healthcare is “Oh, I broke my leg!” A lion comes and eats you, you’re dead. Well, I’m not dead, I’m the lion, you’re dead!”',
+								'“Now that I own the building I’m looking for new sources of revenue. And a daycare center? Muahahahahahahahaha…Well I guess it’s not an evil idea, it’s just a regular idea, but there’s no good laugh for a regular idea.”',
+								'"Michael’s like a movie on a plane. You know it’s not great, but it’s something to watch. And then when it’s over, you’re like, how much time is left on this flight? You know, now what?"',
+								'"I love a good quitting story. It makes me feel like I have control over my own life. Gives me hope. Maybe I will have one of own someday. [laughs] But I dream... so..."',
+								'"Yes, I have a dream, and it’s not some MLK dream for equality. I want to own a decommissioned lighthouse. And I want to live at the top. And nobody knows I live there. And there’s a button that I can press, and launch that lighthouse into space."',
+								'"I have been trying to get on jury duty every year since I was 18 years old. To get to go sit it in an air-conditioned room, downtown, judging people, while my lunch is paid for ... that is the life."',
+								'"You cheated on me? When I specifically asked you not to?"',
+								'"We didn’t play many video games in Scranton. Instead we’d do stuff like.. uh, Pam and I would sometimes hum the same high pitched note and try to get Dwight to make an appointment with an ear doctor. And, uh, Pam called it... Pretendinitis."',
+								'"Oh so Dwight gave me this wooden mallard as a gift. I found a recording device in it. Yes. So. I think if I play it just right, I can get Dwight to live out the plot of National Treasure."'];
+                var count = -1;
+                return function() {
+                return wordArray[++count % wordArray.length];
+                          }
+                }());
+                        
+        </script>
+                        
+            <h1 style="color:black" id="office">&nbsp;</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="well">
+          <h5>SELECT Episode:</h5>
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Episode Overview</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div id="gauge"></div>
+	  </div>
+	  <div class="row"></div>
+	  <div class="col-md-12">
+	  <div id="bar"></div>
+	
+		
+	  <br/>
+	  <div class="row"></div>
+	  <div class="row">
+			<div class="row-md-12 text-center">
+		  <h3>Insights</h3>
+		</div>
+	</div>
+	 
+      <div class="container">
+          <div class="row">
+            <div class="row-md-12 text-left">
+            
+            <ul>Our analysis was geared towards showing the evolution of the show through the changing popularity of its' characters. 
+              Obviously the show was a great success, but we wanted to see which characters contributed more or 
+              less to the overall popularity.</ul>
+            <ul>The pie chart shows the amount of lines spoken by the character as a % of total script.
+              The gauge shows the episode rating, going from a gray (0) to Dwight's mustard shirt color (10). Both of the illustration tell the story of both character and user popularity
+              as the application user can track the evolution of both.</ul>
+            <ul>Our observations have confirmed the overwhelming popularity of Michael Scott (played by Steve Carell). Average rating for episodes with Michael were 8.42,
+			   as opposed to 7.78 without. The highest rated episode is the last one (923) coming in at 9.8/10. </ul>
+			<ul>Michael has the highest number of overall lines even though he was missing from 49 episodes. Highest number of lines are spoken by Micheal, Dwight and Jim made up 20.2%, 12.6% and 11.3% of total lines, respectively.</ul>
+			<ul>Jim Halpert (played by John Krasinsky) and Dwight Schrute 
+               (played by Rainn Wilson) are the only two characters who were present in every episode of The Office aired.</ul>
+			
+			</div>
+          </div>
+        </div>
+
+
+  <!-- <script src="https://cdn.plot.ly/plotly-1.31.2.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="{{ url_for('static', filename='js/bonus.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+
+</body>
+
+</html>
